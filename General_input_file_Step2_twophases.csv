@@ -1,0 +1,20 @@
+Nom;nblignes;nbcols;Valeur;Type
+nb_pigs;1;1;100;int
+file_feeds;1;1;Feeds.csv;str
+Variability;1;1;1;int
+file_profile;1;1;profile.csv;str
+file_profile_males;1;1;profiles-barrows.csv;str
+file_profile_females;1;1;profiles-females.csv;str
+BWimoy;1;1;32;float
+Ageimoy;1;1;73;int
+Number_Phase;1;1;2;int
+Mode;1;2;2 2;int
+Point_diet_change;1;2;0 65;float
+Feed1;1;2;GrowingStd FinishingStd;str
+Feed2;1;2;GrowingStd FinishingStd;str
+Percentage_feed1;1;2;100 100;float
+type;1;1;mixte;str
+duration;1;1;112;int
+target_slaughter_weight;1;1;120;float
+scenario;1;1;Step2_twophases;str
+file_inputLCA;1;1;InputLCAFR.csv;str

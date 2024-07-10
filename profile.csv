@@ -1,0 +1,3 @@
+Nom;Sexe;AgeInit;PVInit;ModeFin;Duree;PVFin;Carcasse;Unite;Equation;a;b;PDMoy;Bgompertz;Entretien;PVmr2
+1-F1;0;70;30;1;85;110;0.79;3;3;4.45;0.0216;143;0.0171;1;70
+1-M1;1;70;30;1;85;110;0.79;3;3;5.02;0.0189;150;0.0194;1;70

@@ -1,0 +1,25 @@
+Name;Value;Type;Unit;Commentary
+EFN_NH3H;0.27;float;kg N-NH3/kg TAN;EMEP (2019)  3B manure management,table3.9, swine 8-110kg, slurry management
+EFN_NH3HSow;0.35;float;kg N-NH3/kg TAN;EMEP (2019)  3B manure management,table3.9, swine sows, slurry management
+EFN_N2OH;0.002;float;kg N-N2O/ kg N;IPCC (2006): Chap 10 TABLE 10.21-Pit storage bellow animal confinements
+EFN_NOxH;0.0001;float;kg N-NOx/ kg N;EMEP (2019) Table 3.10 page 32 applique applied to TAN
+EFN_NH3St;0.11;float;kg N-NH3/kg N;EMEP (2019)  Table 3.9 page 31 - EF storage slurry fattening pig applied to TAN
+EFN_N2OSt;0;float;kg N-N2O/ kg N;IPCC (2006): Chap 10  TABLE 10.21-liquid slurry
+EFN_N2H;0.003;float;kg N-N2 / kg TAN;EMEP (2019) Table 3.10 page 32 applique applied to TAN
+EF_N-N2O_indirNH3;0.01;float;kg N-N2O/ kg N-NH3;IPCC (2006) Chap 11 Table 11.3 page 24 EF4
+EF_N-N2O_indirNOx;0.01;float;kg N-N2O/ kg N-NOx;IPCC (2006) Chap 11 Table 11.3 page 24 EF4
+E_CH4_ResDigpig;670;float;J/g ResDig;Rigolot et al.(2010a)
+B0;0.45;float;m3/kgDM;IPCC (2006) gives a value of 0.45 m3CH4/kg VS for Western Europe
+Temp;13;float;degree C;IPCC (2006): Chap 10 TABLE 10.17 average annual temperature cool climate
+Prep_indoor;0.666666667;float;;proportion of time for indoor storage of manure
+Tindoor;12;float;degree C;temperature of manure for indoor storage
+Prep_Outdoor;0.333333333;float;;proportion of time for outdoor storage of manure
+Toutdoor;12;float;degree C;temperature of manure for outdoor storage
+CH4_ColerValue;55.65;float;MJ/kg;CH4 calorific value
+aTempMoy;0.1517;float;;a parameter for equation to calculate methane conversion factor
+bTempMoy;2.1569;float;;b parameter for equation to calculate methane conversion factor
+cTempMoy;24.634;float;;c parameter for equation to calculate methane conversion factor
+Miyo_CH4;0.67;float;kg/m3;conversion factor of m3 CH4 to kg CH4
+ElectricityHousing;11.5;float;kWh/pig;housing electricity consumption per pig
+Min_N_NH3;0.1;float;kgTAN/kgN/year;Factor for mineralisation of TAN
+Feed_Road;30;float;km;Transport, lorry 16-32t, EURO3/RER S

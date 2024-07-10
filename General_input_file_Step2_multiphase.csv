@@ -1,0 +1,19 @@
+Nom;nblignes;nbcols;Valeur;Type
+nb_pigs;1;1;100;int
+file_feeds;1;1;Feeds.csv;str
+Variability;1;1;0;int
+file_profile;1;1;profile.csv;str
+file_profile_males;1;1;profiles-barrows.csv;str
+file_profile_females;1;1;profiles-females.csv;str
+BWimoy;1;1;32;float
+Ageimoy;1;1;73;int
+Number_Phase;1;1;10;int
+Mode;1;10;2 2 2 2 2 2 2 2 2 2;int
+Point_diet_change;1;10;0 40 50 60 70 80 90 100 110 120;float
+Feed1;1;10;FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd FeedAStd ;str
+Feed2;1;10;FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd FeedBStd ;str
+Percentage_feed1;1;10;100 83 69 59 50 42 33 23 12 0;float
+duration;1;1;112;int
+target_slaughter_weight;1;1;120;float
+scenario;1;1;Step2_multiphase_Variability0;str
+file_inputLCA;1;1;InputLCAFR.csv;str

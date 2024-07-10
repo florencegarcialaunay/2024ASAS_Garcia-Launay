@@ -1,0 +1,36 @@
+Calculation:_;Comparer;;
+Results:_;etude_dimpact;;
+Product_8:_;1_kWh_Electricity_low_voltage_FR_market_for__Alloc_Rec_S_Copied_from_ecoinvent_(of_project_AGRIBALYSE);;
+Product_9:_;1_tkm_Transport_freight_lorry32mtEURO3;;
+Methode:_;Methode_Ecoalim_à_valider_v3.2.2_V3.22;;
+Indicateur:_;Caracterisation;;
+Skip_categories:_;Jamais;;
+Exclure_les_processus_dinfrastructure:_;Non;;
+Exclure_les_emissions_à_long_terme:_;Non;;
+Sorted_on_item:_;Categorie_dimpact;;
+Sort_order:_;Croissant;;
+;detail;1_kWh_Electricity_low_voltage_FR_market_for__Alloc_Rec_S_Copied_from_ecoinvent;Transport_freight_lorry32mtEURO3
+Categorie_dimpact;Unite;ElectricitykWh;LorryTransport
+Phosphorus_consumption;kg_P;8.97E-07;9.63E-07
+CED_1,8_non_renewable_fossil_nuclear;MJ;13.042354;2.7660351
+Climate_change_ILCD_;kg_CO2_eq;0.11293775;0.1700659
+Acidification_ILCD;molc_H+_eq;0.00064458;0.00120048
+Terrestrial_eutrophication_ILCD;molc_N_eq;0.000922928;0.004875452
+Freshwater_eutrophication_ILCD;kg_P_eq;3.66E-05;1.21E-05
+Marine_eutrophication_ILCD;kg_N_eq;0.000122779;4.47E-04
+Acidification_CML_baseline;kg_SO2_eq;0.000549819;0.000894897
+Eutrophication_CML_baseline;kg_PO4---_eq;0.000161791;0.000200011
+Land_competition_CML_non_baseline;m2a;0.00939331;0.011090965
+Global_warming_(GWP100a);kg_CO2_eq;0.11293684;0.17006554
+CED1.8_total;MJ;13.657456;2.7830347
+Climate_change_without_land_transformati;kg_CO2_eq;0.11287615;0.17000801
+CC_EF30;kg CO2 eq;0.08734419;0.091484168
+Acidification_EF30;mol H+ eq;0.000520709;0.00063612
+EuFreshwater_EF30;kg P eq;2.96E-05;5.67E-06
+EuMarine_EF30;kg N eq;0.000114328;0.000249639
+EuTerr_EF30;mol N eq;0.000891726;0.002731886
+Landuse_EF30;Pt;0.57741472;1.6297537
+ResourceuseFossils_EF30;MJ;11.909655;1.4369389
+CCFossil_EF30;kg CO2 eq;0.086961553;0.091419385
+CCBiogenic_EF30;kg CO2 eq;0.000329025;3.21E-05
+CCLU_EF30;kg CO2 eq;5.36E-05;3.27E-05

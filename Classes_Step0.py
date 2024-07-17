@@ -62,8 +62,7 @@ class Batch:
         for name in list_delivery:
             p = self.dict_pigs[name]
             print(p.ID + ' ' + p.delivery + ' ' + str(p.Agei) + ' ' + str(p.Age) + ' ' + '%.*f' % (3, p.LWi) + ' ' + '%.*f' % (3, p.LW)
-                  + ' ' + '%.*f' % (3, ((p.LW - p.LWi)/(p.Age - p.Agei))) , end=' ', file=file_perf)
-            print(' ', file=file_perf)
+                  + ' ' + '%.*f' % (3, ((p.LW - p.LWi)/(p.Age - p.Agei))) , file=file_perf)
             file_perf.flush()
           
             self.IDpigs.remove(name)

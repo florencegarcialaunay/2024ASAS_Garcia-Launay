@@ -61,7 +61,7 @@ class Batch:
             p = self.dict_pigs[name]
             print(param['scenario'] + ' ' + p.ID + ' ' + p.name + ' ' + str(i) + ' ' + str(p.Age) + ' ' + '%.*f' % (3, p.LW) + ' ' + '%.*f' % (3, p.DG)
                   + ' ' + '%.*f' % (3, p.Prot) + ' ' + '%.*f' % (3, p.Lip) + ' ' + '%.*f' % (3, p.Feed_Intake)
-                  + ' ' + '%.*f' % (3, p.FecalN) + ' ' + '%.*f' % (3, p.UrinN) + ' ' + '%.*f' % (3, p.RetainedN), file = file_day)
+                  + ' ' + '%.*f' % (3, p.FecalN) + ' ' + '%.*f' % (3, p.UrinN), file = file_day)
             file_day.flush()
 
 
@@ -89,18 +89,33 @@ class Batch:
         # pigs are sent, removed from lists and output file filled
         for name in list_delivery:
             p = self.dict_pigs[name]
-            print(param['scenario'] + ' ' + p.ID + ' ' + p.name + ' ' + p.delivery + ' ' + str(p.Agei) + ' ' + str(p.Age) + ' ' + '%.*f' % (3, p.LWi) + ' ' + '%.*f' % (3, p.LW)
-                  + ' ' + '%.*f' % (3, p.ProtInit) + ' ' + '%.*f' % (3, p.Prot) + ' ' + '%.*f' % (3, p.LipInit) + ' '  + '%.*f' % (3, p.Lip)
-                  + ' ' + '%.*f' % (3, p.Cumulated_FM_intake) + ' ' + '%.*f' % (3, p.N_intake) + ' ' + '%.*f' % (3, p.N_excreted)
-                  + ' ' + '%.*f' % (3, p.TAN) + ' ' + '%.*f' % (3, ((p.LW - p.LWi)/(p.Age - p.Agei))) + ' ' + '%.*f' % (3, (p.Cumulated_FM_intake/(p.LW - p.LWi))) , end=' ', file=file_perf)
+            string_feed = ''
             for feed in p.dict_stockFeed.keys():
-                print(str(feed) + ' ' + '%.*f' % (3, p.dict_stockFeed[feed]), end = ' ', file = file_perf)
-            print(' ', file=file_perf)
+                string_feed = string_feed + '\t' + str(feed) + '\t' + '%.*f' % (3, p.dict_stockFeed[feed])
+            print(param['scenario'] 
+                  + '\t' + p.ID 
+                  + '\t' + p.name 
+                  + '\t' + p.delivery 
+                  + '\t' + str(p.Agei) 
+                  + '\t' + str(p.Age) 
+                  + '\t' + '%.*f' % (3, p.LWi) 
+                  + '\t' + '%.*f' % (3, p.LW)
+                  + '\t' + '%.*f' % (3, p.ProtInit) 
+                  + '\t' + '%.*f' % (3, p.Prot) 
+                  + '\t' + '%.*f' % (3, p.LipInit) 
+                  + '\t'  + '%.*f' % (3, p.Lip)
+                  + '\t' + '%.*f' % (3, p.Cumulated_FM_intake) 
+                  + '\t' + '%.*f' % (3, p.N_intake) 
+                  + '\t' + '%.*f' % (3, p.N_excreted)
+                  + '\t' + '%.*f' % (3, p.TAN) 
+                  + '\t' + '%.*f' % (3, ((p.LW - p.LWi)/(p.Age - p.Agei))) 
+                  + '\t' + '%.*f' % (3, (p.Cumulated_FM_intake/(p.LW - p.LWi)))
+                  + string_feed, file=file_perf)
             file_perf.flush()
 
             print(param['scenario'] + ' ' + p.ID + ' ' + p.name + ' ' + '%.*f' % (3, p.CC_feed) + ' ' + '%.*f' % (3, p.AC_feed)
-                  + ' ' + '%.*f' % (3, p.CC_gain) + ' ' + '%.*f' % (3, p.AC_gain) , end=' ', file=file_lca)
-            print(' ', file=file_lca)
+                  + ' ' + '%.*f' % (3, p.CC_gain) + ' ' + '%.*f' % (3, p.AC_gain) , file=file_lca)
+            # print(' ', file=file_lca)
             file_lca.flush()
             
             self.IDpigs.remove(name)
